@@ -1,0 +1,130 @@
+
+:root {
+  --green: #5fb843;
+  --green-dark: #3f9a26;
+  --blue: #0b4a9e;
+  --bs-success: #5fb843;
+  --bs-success-rgb: 95, 184, 67;
+  --bs-primary: #0b4a9e;
+  --bs-primary-rgb: 11, 74, 158;
+  --bs-body-font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+}
+
+.text-green { color: var(--green) !important; }
+.bg-green { background: var(--green) !important; }
+
+/* ===== Buttons ===== */
+.btn-green {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--green);
+  --bs-btn-border-color: var(--green);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--green-dark);
+  --bs-btn-hover-border-color: var(--green-dark);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--green-dark);
+}
+
+.btn-blue {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--blue);
+  --bs-btn-border-color: var(--blue);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #083a7c;
+  --bs-btn-hover-border-color: #083a7c;
+}
+
+/* ===== Navigation ===== */
+.navbar .nav-link { color: #666; font-size: 14px; }
+.navbar .nav-link:hover { color: var(--blue); }
+
+/* ===== Small helpers ===== */
+.badge-soft { background: #e4f4df; color: var(--green); font-weight: 600; }
+
+.icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.glass-green {
+  background: rgba(255, 255, 255, 0.14) !important;
+  border-color: rgba(255, 255, 255, 0.55) !important;
+  backdrop-filter: blur(6px);
+  transition: transform 0.25s;
+}
+.glass-green:hover { transform: translateY(-6px); }
+
+.clamp-2, .clamp-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.clamp-2 { -webkit-line-clamp: 2; }
+.clamp-3 { -webkit-line-clamp: 3; }
+
+/* ===== Sections ===== */
+.hero { background: linear-gradient(180deg, #f3faf1 0%, #fff 100%); }
+
+.impact {
+  background: linear-gradient(135deg, #3d9a22 0%, #46b823 45%, #5cc23a 60%, #3d9a22 100%);
+}
+
+.newsletter {
+  background: linear-gradient(135deg, #55c233 0%, #4cb82e 50%, #3f9d22 100%);
+}
+
+.nl-form { border-bottom: 1px solid rgba(255, 255, 255, 0.7); }
+.nl-form input::placeholder { color: #fff; opacity: 0.95; }
+
+/* ===== Quick Donate ===== */
+#qdTabs .nav-link { color: #111; font-size: 13px; font-weight: 600; }
+#qdTabs .nav-link.active { background: var(--green); color: #fff; box-shadow: 0 8px 16px rgba(95, 184, 67, 0.35); }
+
+.qd-card { height: 313px; }
+.qd-overlay { background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 55%, transparent 100%); padding: 24px; }
+
+/* ===== What We Are Doing ===== */
+#doingFilters .btn { color: #475569; font-size: 12px; font-weight: 600; }
+#doingFilters .btn.active { background: #4caf50; color: #fff; border-color: #4caf50; }
+
+.doing-card { height: 192px; }
+.doing-card img { height: 100%; object-fit: cover; transition: transform 0.4s; }
+.doing-card:hover img { transform: scale(1.08); }
+.doing-card .badge { font-size: 11px; margin-bottom: 4px; }
+
+/* ===== Blogs / Media / News ===== */
+.blog-card .card-img-top { aspect-ratio: 4 / 3; object-fit: cover; }
+.blog-card:hover h6 { color: var(--green); }
+
+/* ===== Footer ===== */
+.site-footer { background: linear-gradient(180deg, #1a2234 0%, #131a2b 100%); }
+.footer-link { color: #e3e7ee; text-decoration: none; }
+.footer-link:hover { color: var(--green); }
+
+.social-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: #fff;
+  color: #111;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.social-btn:hover { background: var(--green); color: #fff; }
+
+@media (max-width: 767px) {
+  .qd-card { height: 280px; }
+}
